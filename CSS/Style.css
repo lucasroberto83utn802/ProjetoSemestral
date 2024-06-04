@@ -1,0 +1,670 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    border: solid 2px red;
+    background-color: black;
+}
+
+/* MENU */
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    top: 200px;
+    border: 2px solid rgba(198, 217, 238, 0);
+    font-size: 20px;
+    color: rgb(198, 217, 238); 
+}
+
+.a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+.pesquisa{
+    display: flex;
+    position: relative;
+    top: 15px;
+    left: -50px;
+    width: 700px;
+    height: 40px;
+    border-radius: 4px;
+    border-color: white;
+    color: rgb(198, 217, 238);
+}
+
+.cupom{
+    display: flex;
+    width: 100%;
+    border: solid 2px rgb(82, 0, 0);
+    height: 68px;
+}
+.barra{
+    display: flex;
+    width: 100%;
+    border: solid 2px red;
+    height: 103px;
+    background-color: rgb(0, 0, 0);
+    
+}
+.perfil{
+    display: flex;
+    position: relative;
+    top: 12px;
+    left: -12px;
+}
+.imagem{
+    display: flex;
+    position: relative;
+    top: 2px;
+    left: 80px;
+}
+.imagem2{
+    display: flex;
+    position: relative;
+    top: 5px;
+    left: -320px;
+}
+
+li{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    border: solid 2px red;
+    list-style-type: none;
+    margin-left: 50px;
+}
+
+.divisao{
+   
+    width: 100%;
+    height: 800px;
+    border: solid 2px blue;
+}
+.divisao2{
+    width: 100%;
+    height: 800px;
+    border: solid 2px rgb(233, 233, 233);
+    background-color: black;
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    border: solid 2px green;
+}
+.login{
+    display: flex;
+    position: relative;
+    top: 20px;
+    left: -10px;
+    color: #ffffff;
+}
+.login2{
+    display: flex;
+    position: relative;
+    top: 20px;
+    left: -6px;
+    color: rgb(255, 255, 255);
+      
+    p:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+.login3{
+    display: flex;
+    position: relative;
+    top: 20px;
+    left: -3px;
+    color: rgb(255, 255, 255);
+}
+.login4{
+    display: flex;
+    position: relative;
+    width: 50px;
+    top: 35px;
+    color: rgb(255, 255, 255);
+    left: -106px;
+
+}
+.login5{
+    display: flex;
+    position: relative;
+    width: 50px;
+    top: 35px;
+    color: rgb(255, 255, 255);
+    left: -102px;
+}
+.login9{
+    display: flex;
+    position: relative;
+    top: 35px;
+    color: rgb(255, 255, 255);
+    left: -98px;
+
+    p:hover{
+        cursor: pointer;
+            text-decoration: underline;
+    }
+}
+.acessibilidade{
+    display: flex;
+    position: relative;
+    top: 15px;
+    left: 200px;
+}
+.acessibilidadeimg:hover{
+    width: 38px;
+    height: 37px;
+    top: -5px;
+    position: relative;
+}
+.suporte{
+    display: flex;
+    position: relative;
+    left: 120px;
+    top: 18px;
+}
+.suporteimg:hover{
+    width: 38px;
+    height: 36px;
+    top: -5px;
+    position: relative;
+}
+.coracao{
+    display: flex;
+    position: relative;
+    top: 15px;
+    left: -7px;   
+    
+}
+.coracaoimg:hover{
+    width: 54px;
+    height: 37px;
+    top: -2px;
+    position: relative;
+}
+.carrinhoimg:hover{
+    height: 50px;
+    width: 49px;
+    top: -5px;
+    position: relative;
+}
+
+.carrinho{
+    display: flex;
+    position: relative;
+    top: 12px;
+    left: -8px;
+    
+}
+.barra2{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    border: solid 2px rgb(241, 122, 40, 100%);
+    height: 40px;
+}
+/* CARROSSEL */
+.carousel-container {
+    width: 96%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+  }
+
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel img {
+    max-width: 100%;
+    display: block;
+  }
+
+  .carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+
+  .carousel-control {
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .carousel-indicators .active {
+    background-color: #ffffff;
+  }
+.div2{
+    display: flex;
+    position: relative;
+    width: 100%;
+    background-color: black;
+}
+  .barra3{
+    display: flex;
+    position: relative;
+    width: 99%;
+    height: 60px;
+    left: 7px;
+    background-color: rgb(241, 40, 40);
+    top: 0px;
+    border-radius: 1px;
+  }
+  
+  
+   /* Estilos opcionais */
+   #counter{
+    font-size: 24px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 0px;
+    left: 1000px;
+    left: 200px;
+   }
+   .items{
+    display: flex;
+    position: relative;
+    width: 200px;
+    left: 30px;
+    height: 120px;
+    border: solid 4px color rgb(255, 68, 0);
+   }
+   .palavra{
+    display: flex;
+    position: relative;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 68, 0);
+    top: 330px;
+    left: -347px;
+   }
+   .top-left{
+    position: absolute;
+    margin-left: 900px;
+    top: -4px;
+    border: 2px solid rgba(255, 255, 255, 0.915);
+    width: 260px;
+   }
+   
+.promocaoo{
+    width: 300px;
+    height: 30px;
+    border: solid 2px red;
+    position: relative;
+    display: flex;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: black;
+    left: 100px;
+}
+.itemsbarra{
+    display: flex;
+    position: absolute;
+    border: solid 2px red;
+    width: 1463px;
+    top: 34px;
+    height: 350px;
+    background-color: #ffffff;
+    left: -103px;
+}
+.card{
+    display: flex;
+    position:relative;
+    border: solid 2px color orange;
+    top: 6px;
+    width: 278px;
+    height: 315px;
+    margin-left: 280px;
+}
+.cardpai{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 0.3s ease;
+    
+}
+.cardpai > * {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.cardpai:hover > :not(:hover){
+    opacity: .4;
+    transform: scale(0.9);
+}
+imagemm{
+    transition: .35s;
+    cursor: pointer;
+    padding: 10px;
+    border: solid 1px #ccc;
+}
+.promocaobarra{
+    width: 100%;
+    display: flex;
+    background-color: #ffcdcc;
+    position: relative;
+    height: 40px;
+    border: solid 2px red;
+}
+.divisaoproduto{
+    display: flex;
+    position: relative;
+    width: 250px;
+    height: 340px;
+    border: solid 2px rgb(0, 0, 0);
+    flex-direction: column;
+    border-radius: 10px;
+    margin-left: 10px;
+    box-shadow: 5px 5px 20px 5px;
+    font-size: 17px;
+    margin-left: 120px;
+    left: -75px;
+}
+.divisaoproduto:hover{
+ 
+    height: 250px;
+    position: relative;
+    top: -2px;
+    height: 340px;
+
+    cursor: pointer ;
+}
+.compra2{
+    display: flex;
+    position: relative;
+    border: solid 2px red;
+    background-color: #ffcdcc;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    font-size: 28px;
+    top: 280px;
+    justify-content: center;
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+}
+.compra2:hover{
+    display: flex;
+    position: relative;
+    width: 200px;
+    height: 42px;
+    top: 279px;
+}
+.imagemproduto{
+    display: flex;
+    position: relative;
+    border: solid 2px red;
+    width: 210px;
+    height: 110px;
+    top: -20px;
+    left: 10px;
+    justify-content: center;
+}
+.compra3{
+    display: flex;
+    position: relative;
+    border: solid 2px red;
+    background-color: #ffcdcc;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    font-size: 28px;
+    top: 120px;
+    justify-content: center;
+    margin-left: -119px;
+    color: rgb(0, 0, 0);
+}
+.compra3:hover{
+    display: flex;
+    position: relative;
+    width: 200px;
+    height: 42px;
+    top: 120px;
+}
+.compra4{
+    display: flex;
+    position: relative;
+    border: solid 2px red;
+    background-color: #ffcdcc;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    font-size: 28px;
+    top: 90px;
+    justify-content: center;
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+}
+.compra4:hover{
+    display: flex;
+    position: relative;
+    width: 200px;
+    height: 42px;
+    top: 90px;
+}
+.preço1{
+    display: flex;
+    position: relative;
+    font-size: 30px;
+    border: solid 2px red;
+    top: 15px;
+}
+.preço2{
+    display: flex;
+    position: relative;
+    font-size: 30px;
+    border: solid 2px red;
+    width: 200px;
+    top: 40px;
+    left: 10px;
+}
+
+.preço3{
+     display: flex;
+    position: relative;
+    font-size: 30px;
+    border: solid 2px red;
+    top: -3px;
+}
+.preço4{
+    display: flex;
+    position: relative;
+    font-size: 30px;
+    border: solid 2px red;
+    width: 200px;
+    top: 70px;
+    left: 10px;
+}
+
+.escrita{
+    display: flex;
+    position: relative;
+    border: solid 2px red;
+    width: 200px;
+    height: 50px;
+    top: 30px;
+    left: 10px;
+}
+.comprar{
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 33px;
+    left: -116px;
+    top: 40px;
+    border: solid 2px rgba(255, 0, 0, 0);
+    border-radius: 10px;
+}
+.comprar2{
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 33px;
+    left: -153px;
+    top: 50px;
+    border: solid 2px rgba(255, 0, 0, 0);
+    border-radius: 10px;
+}
+.comprar3{
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 33px;
+    left: -140px;
+    top: 70px;
+    border: solid 2px rgba(255, 0, 0, 0);
+    border-radius: 10px;
+}
+.barra40{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border: solid 2px red;
+    background-color:#ffcdcc;
+    top: 200px;
+}
+.promo{
+    display: flex;
+    position: relative;
+    top: 10px;
+    justify-content: space-evenly;
+    flex-direction: row;
+  
+}
+
+.items{
+    display: flex;
+    position: absolute;
+    border: solid 2px red;
+    background-color: white;
+    width: 100%;
+    height: 350px;
+    top: 2070px;
+    left: 0px;
+}
+.mais{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+.comprar4{
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 33px;
+    left: -140px;
+    top: 35px;
+    border: solid 2px rgba(255, 0, 0, 0);
+    border-radius: 10px;
+}
+.comprar5{
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 33px;
+    left: -0px;
+    top: 15px;
+    border: solid 2px rgba(255, 0, 0, 0);
+    border-radius: 10px;
+}
+.comprar6{
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 33px;
+    left: -0px;
+    top: 15px;
+    border: solid 2px rgba(255, 0, 0, 0);
+    border-radius: 10px;
+}
+.computer{
+    display: flex;
+    position: absolute;
+    width: 1473px;
+    height: 100px;
+    border: solid red 2px;
+    
+}
+
+.loja{
+    display: flex;
+    border: solid red 2px;
+    position: relative;
+    width: 300px;
+    height: 50px;
+    color: white;
+    top: 90px;
+}
+.turbo{
+    display: flex;
+    position: relative;
+    width: 400px;
+    height: 600px;
+    color: white;
+    font-size: 30px;
+    top: 100px;
+}
+.contato{
+    display: flex;
+    position: relative;
+    width: 0px;
+    height: 00px;
+}
+.telefone{
+    display: flex;
+    position: relative;
+    border: solid 2px red;
+    width: 100px;
+    height: 20px;
+    color: white;
+    top: 28px;
+    margin-left: 100px;
+    font-size: 35px;
+
+}
+.email{
+    display: flex;
+    position: relative;
+   left: 400px;
+   top: -26px;
+    
+}
+
+
